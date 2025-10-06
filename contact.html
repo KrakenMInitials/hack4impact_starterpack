@@ -1,9 +1,38 @@
-!<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-    <head>
-        <title> Moe's Personal Site </title>
-    </head>
-    <body>
-        This is the contact page.
-    </body>
+  <head>
+    <title>Moe's Personal Site</title>
+        <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo">
+        <a href="index.html">Moe's Personal Site</a>
+      </h1>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1 class="page-title">Contact</h1>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+      This is the contact page
+    </main>
+    <footer class="footer">© 2023 Moe Aung | All Rights Reserved</footer>
+  </body>
 </html>
